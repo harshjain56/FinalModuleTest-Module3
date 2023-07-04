@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User location</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    <h2>My Public IP Address : <span id="ipAddress"></span></h2>
+    <button id="dataButton">Get Data</button>
+    <div class="userlocationDetails" id="userLocationDetails">
+        <div class="locationDetails">
+            <div>
+                <p>Lat: <span id="latitude"></span></p>
+                <p>Long: <span id="longitude">hello</span></p>
+            </div>
+
+            <div>
+                <p>City: <span id="city"></span></p>
+                <p>Region: <span id="region"></span></p>
+            </div>
+        </div>
+
+        <iframe  height="400" frameborder="0" style="border:5px solid black; margin-top: 20px; width: 90vw;" allowfullscreen id="mapLocation"></iframe>
+
+        <div class="timeZoneDetails">
+            <p>Timezone: <span id="timezone"></span></p>
+            <p>Date and Time: <span id="dateandTime"></span></p>
+            <p>Pincode: <span id="pincode"></span></p>
+            <p id="message"></p>
+        </div>
+
+        <div class="search">
+            <input type="text" placeholder="Filter" id="searchBar">
+        </div>
+
+        <div class="postOfficeDisplay" id="postOfficeDisplay">
+        </div>
+    </div>
+    <script src="./contest.js"></script>
+    
+
+</body>
+</html>
